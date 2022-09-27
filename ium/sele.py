@@ -1,28 +1,28 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
+# from selenium import webdriver
+# from selenium.webdriver.common.by import By
 
 # 创建 WebDriver 对象，指明使用chrome浏览器驱动
 wd = webdriver.Chrome()
 wd.implicitly_wait(10)
 
 # 调用WebDriver 对象的get方法 可以让浏览器打开指定网址
-wd.get('https://www.byhy.net/_files/stock1.html')
+# wd.get('https://www.byhy.net/_files/stock1.html')
 # # 根据id选择元素，返回的就是该元素对应的WebElement对象
 element = wd.find_element(By.ID, 'kw')
 # 通过该 WebElement对象，就可以对页面元素进行操作了
 # 输入字符串到 这个 输入框里
 # element.send_keys('通讯\n')
-element.send_keys('通讯')
+# element.send_keys('通讯')
 
-element.clear() # 清除输入框已有的字符串
-element.send_keys('科技') # 输入新字符串
+# element.clear() # 清除输入框已有的字符串
+# element.send_keys('科技') # 输入新字符串
 
-element = wd.find_element(By.ID, 'go')
-element.click()
+# element = wd.find_element(By.ID, 'go')
+# element.click()
 
 # 返回页面 ID为1 的元素
-element = wd.find_element(By.ID, '1')
-print(element.text)
+# element = wd.find_element(By.ID, '1')
+# print(element.text)
 
 # 获取元素属性class的值
 print(element.get_attribute('class'))
@@ -51,6 +51,5 @@ print(element.get_attribute('class'))
 #     print(element.text)
 
 
-
-
 wd.quit()
+
