@@ -2,13 +2,13 @@
 # from selenium.webdriver.common.by import By
 
 # 创建 WebDriver 对象，指明使用chrome浏览器驱动
-wd = webdriver.Chrome()
-wd.implicitly_wait(10)
+# wd = webdriver.Chrome()
+# wd.implicitly_wait(10)
 
 # 调用WebDriver 对象的get方法 可以让浏览器打开指定网址
 # wd.get('https://www.byhy.net/_files/stock1.html')
 # # 根据id选择元素，返回的就是该元素对应的WebElement对象
-element = wd.find_element(By.ID, 'kw')
+# element = wd.find_element(By.ID, 'kw')
 # 通过该 WebElement对象，就可以对页面元素进行操作了
 # 输入字符串到 这个 输入框里
 # element.send_keys('通讯\n')
@@ -25,7 +25,7 @@ element = wd.find_element(By.ID, 'kw')
 # print(element.text)
 
 # 获取元素属性class的值
-print(element.get_attribute('class'))
+# print(element.get_attribute('class'))
 
 
 # wd.get('https://cdn2.byhy.net/files/selenium/sample1.html')
@@ -51,5 +51,5 @@ print(element.get_attribute('class'))
 #     print(element.text)
 
 
-wd.quit()
+# wd.quit()
 
